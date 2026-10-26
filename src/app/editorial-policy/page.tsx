@@ -1,27 +1,10 @@
 export default function EditorialPolicyPage() {
   return (
-    <main className="max-w-3xl mx-auto p-6">
-      <article className="prose prose-lg max-w-none">
-        <h1>Editorial Policy</h1>
-        <h2>How We Test Software</h2>
-        <p>
-          We test accounting software in real-world freelance workflows. This includes creating invoices, tracking expenses, 
-          managing payments, handling tax-related tasks, and evaluating day-to-day usability. Our reviews are based on 
-          firsthand experience, not just feature comparisons from marketing materials.
-        </p>
-        <h2>Affiliate Links</h2>
-        <p>
-          We only recommend tools we have used. When we include affiliate links, they help support our work at no extra 
-          cost to you. However, our recommendations are never influenced by commission rates—if a tool isn't a good fit, 
-          we won't recommend it regardless of affiliate potential.
-        </p>
-        <h2>Independence</h2>
-        <p>
-          Our reviews are independent. We do not accept payment for positive reviews, and advertisers cannot dictate our 
-          opinions or ratings. Our goal is to provide honest, unbiased guidance to help freelancers choose the right 
-          accounting tools for their needs.
-        </p>
-      </article>
+    <main className="max-w-3xl mx-auto p-6 prose">
+      <h1>Editorial Policy</h1>
+      <p>At Freelancer Accounting Stack, we are committed to providing honest, accurate, and independent reviews.</p>
+      <p>We may earn commissions from affiliate links on this site. However, this does not influence our reviews. We only recommend software and tools that we have personally tested or believe will provide value to our readers.</p>
+      <p>Our content is written by human experts and is periodically reviewed for accuracy.</p>
     </main>
   );
 }

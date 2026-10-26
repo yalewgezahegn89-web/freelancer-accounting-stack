@@ -1,18 +1,10 @@
 export default function ContactPage() {
   return (
-    <main className="max-w-3xl mx-auto p-6">
-      <article className="prose prose-lg max-w-none">
-        <h1>Contact</h1>
-        <p>
-          We'd love to hear from you. For general inquiries, feedback, or suggestions, please reach out to us at:
-        </p>
-        <p>
-          <strong>Email:</strong> <a href="mailto:hello@freelanceraccounting.com">hello@freelanceraccounting.com</a>
-        </p>
-        <p>
-          We reply within 48 hours.
-        </p>
-      </article>
+    <main className="max-w-3xl mx-auto p-6 prose">
+      <h1>Contact Us</h1>
+      <p>If you have questions, feedback, or business inquiries, please reach out to us.</p>
+      <p><strong>Email:</strong> hello@freelanceraccounting.com</p>
+      <p>We aim to respond to all inquiries within 48 hours.</p>
     </main>
   );
 }
