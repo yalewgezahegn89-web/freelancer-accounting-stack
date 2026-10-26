@@ -33,23 +33,25 @@ export default async function SeriesPage({
     <main className="max-w-3xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">{seriesRecord.title}</h1>
       {seriesRecord.description && (
-        <p className="text-lg text-gray-600 mb-8">{seriesRecord.description}</p>
+        <p className="text-lg text-gray-400 mb-8">{seriesRecord.description}</p>
       )}
 
       <h2 className="text-xl font-semibold mb-4">Articles</h2>
       {seriesArticles.length === 0 ? (
         <p className="text-gray-500">No articles in this series yet.</p>
       ) : (
-        <ol className="space-y-3">
+        <ol className="space-y-4">
           {seriesArticles.map((article) => (
             <li key={article.id}>
               <Link
                 href={`/articles/${article.slug}`}
-                className="block rounded-lg border border-gray-200 p-4 transition-colors hover:border-blue-400 hover:bg-blue-50"
+                className="block rounded-lg border border-gray-700 bg-gray-900 p-6 transition-colors hover:border-blue-500"
               >
-                <span className="font-medium">{article.title}</span>
+                <span className="font-semibold text-lg text-blue-400">
+                  {article.title}
+                </span>
                 {article.excerpt && (
-                  <span className="mt-1 block text-sm text-gray-600">
+                  <span className="mt-2 block text-sm text-gray-400">
                     {article.excerpt}
                   </span>
                 )}
