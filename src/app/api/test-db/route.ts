@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
 import { neon } from '@neondatabase/serverless';
 
-export const dynamic = 'force-dynamic';
-
 export async function GET() {
   try {
     const dbUrl = process.env.DATABASE_URL;
@@ -21,8 +19,6 @@ export async function GET() {
     return NextResponse.json({ 
       success: true, 
       message: 'Successfully connected to Neon!',
-      url_length: dbUrl.length,
-      url_starts_with: dbUrl.substring(0, 15) + '...',
       result
     });
 
@@ -30,7 +26,6 @@ export async function GET() {
     return NextResponse.json({ 
       success: false, 
       error: error.message,
-      stack: error.stack
     }, { status: 500 });
   }
 }
